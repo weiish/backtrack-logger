@@ -125,9 +125,7 @@ class MainFrame(wx.Frame):
         config['DEFAULT']['path'] = os.path.dirname(os.path.abspath(__file__)) + '\\logs'
         if config.has_option('SETTINGS','path'):
             self.filePath = config['SETTINGS']['path']
-            print('Loaded settings')
         else:
-            print('Loaded Defaults')
             self.filePath = config['DEFAULT']['path']
         with open(configFilePath, 'w') as configFile:
             config.write(configFile)

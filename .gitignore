@@ -2,3 +2,5 @@
 *.csv
 __pycache__
 config.ini
+/build
+*.spec
